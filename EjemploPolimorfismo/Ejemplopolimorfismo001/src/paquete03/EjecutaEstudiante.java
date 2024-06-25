@@ -2,7 +2,7 @@
 package paquete03;
 
 import java.util.Scanner;
-
+import java.util.Locale;
 /**
  *
  * @author reroes
@@ -14,6 +14,7 @@ public class EjecutaEstudiante {
         // Se declaran variables
         // a.  Declarar Variables
         Scanner entrada = new Scanner(System.in);
+       entrada.useLocale(Locale.US);
         String nombresEst;
         String apellidosEst;
         String identificacionEst;

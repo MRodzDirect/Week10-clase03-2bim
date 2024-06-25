@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete04;
+package paquete05;
+
+import paquete04.*;
 
 public abstract class Estudiante {
     /*
@@ -22,6 +24,15 @@ public abstract class Estudiante {
     protected String identificacionEstudiante;
     protected int edadEstudiante;
     protected double matricula;
+
+    public Estudiante(String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante, double matricula) {
+        this.nombresEstudiante = nombresEstudiante;
+        this.apellidosEstudiante = apellidosEstudiante;
+        this.identificacionEstudiante = identificacionEstudiante;
+        this.edadEstudiante = edadEstudiante;
+        this.matricula = matricula;
+    }
+    
     
     // Método establecerNombresEstudiante(nom: Cadena)
     public void establecerNombresEstudiante(String nom){

@@ -3,25 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete04;
+package paquete05;
+
+import paquete04.*;
 
 public class EstudiantePresencial extends Estudiante {
 
     /*1.  Declarar
-        numeroCreditos: Entero 
-        costoCredito: Real 
+    numeroCreditos: Entero
+    costoCredito: Real 
      */
-    int numeroCreditos;
-    double costoCredito;
-
     public EstudiantePresencial(int numeroCreditos, double costoCredito) {
         super();
         this.numeroCreditos = numeroCreditos;
         this.costoCredito = costoCredito;
     }
+
     
-    
-    
+    int numeroCreditos;
+    double costoCredito;
+
     //  Métodos establecer y calcular para los datos o atributos de la clase
     // 2.  Método establecerNumeroCreditos(numero: Real)
     public void establecerNumeroCreditos(int numero) {

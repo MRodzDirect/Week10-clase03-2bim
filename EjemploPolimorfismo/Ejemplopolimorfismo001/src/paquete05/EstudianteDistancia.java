@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paquete04;
+package paquete05;
+
+import paquete04.*;
 
 public class EstudianteDistancia extends Estudiante {
     /*1.  Declarar

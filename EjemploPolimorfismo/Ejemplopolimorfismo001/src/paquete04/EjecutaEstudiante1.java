@@ -3,7 +3,7 @@ package paquete04;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class EjecutaEstudiante {
+public class EjecutaEstudiante1 {
 
     public static void main(String[] args) {
 
@@ -127,17 +127,8 @@ public class EjecutaEstudiante {
             // 2. se hace uso de los métodos obtener del objeto para presentar
             // los valores que se necesite en pantalla
             // Imprimir:
-            System.out.printf("Datos Estudiante\n"
-                    + "Nombres: %s\n"
-                    + "Apellidos: %s\n"
-                    + "Identificación: %s\n"
-                    + "Edad: %d\n"
-                    + "Costo Matricula: %.2f\n",
-                    estudiantes[i].obtenerNombresEstudiante(),
-                    estudiantes[i].obtenerApellidoEstudiante(),
-                    estudiantes[i].obtenerIdentificacionEstudiante(),
-                    estudiantes[i].obtenerEdadEstudiante(),
-                    estudiantes[i].obtenerMatricula());
+            System.out.printf("%s\n", estudiantes[i]);
+                    
 
         }
     }
