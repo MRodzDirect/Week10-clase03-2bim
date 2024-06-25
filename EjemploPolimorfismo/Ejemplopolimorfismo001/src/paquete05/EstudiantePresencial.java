@@ -18,6 +18,7 @@ public class EstudiantePresencial extends Estudiante {
         this.numeroCreditos = numeroCreditos;
         this.costoCredito = costoCredito;
     }
+    
 
     
     int numeroCreditos;

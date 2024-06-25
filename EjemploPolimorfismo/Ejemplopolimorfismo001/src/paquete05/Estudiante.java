@@ -30,7 +30,6 @@ public abstract class Estudiante {
         this.apellidosEstudiante = apellidosEstudiante;
         this.identificacionEstudiante = identificacionEstudiante;
         this.edadEstudiante = edadEstudiante;
-        this.matricula = matricula;
     }
     
     

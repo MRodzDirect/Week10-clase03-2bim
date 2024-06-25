@@ -52,7 +52,6 @@ public class EjecutaEstudiante {
                     numeroCreds = entrada.nextInt();
                     System.out.println("Ingrese el costo de cada créditos");
                     costoCred = entrada.nextDouble();
-                    temp = new Estudiante()
                     estudiantes.add(new EstudiantePresencial(nombresEst, apellidosEst, identificacionEst, edadEst, numeroCreds,costoCred));
             }
 
