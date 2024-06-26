@@ -40,7 +40,6 @@ public class Ejecutor {
 
         do {
             System.out.println("Elija el tipo de figura:");
-            opc = entrada.nextInt();
             System.out.println("[1] Cuadrado");
             System.out.println("[2] Rombo");
             System.out.println("[3] Triangulo");
@@ -103,3 +102,53 @@ public class Ejecutor {
         }
     }
 }
+/* Prueba de escritorio:
+
+Elija el tipo de figura:
+[1] Cuadrado
+[2] Rombo
+[3] Triangulo
+[0] Salir
+1
+Ingrese las caracteristicas de la figura
+da
+Ingrese el lado del cuadrado
+5
+�Desea ingresar otra Figura? (Si / No)
+si
+Elija el tipo de figura:
+[1] Cuadrado
+[2] Rombo
+[3] Triangulo
+[0] Salir
+2
+Ingrese las caracteristicas de la figura
+ra
+Ingrese la diagonal menor del Rombo
+6
+Ingrese la diagonal mayor del Rombo
+8
+�Desea ingresar otra Figura? (Si / No)
+Si
+Elija el tipo de figura:
+[1] Cuadrado
+[2] Rombo
+[3] Triangulo
+[0] Salir
+3
+Ingrese las caracteristicas de la figura
+daada
+Ingrese la base del Triangulo
+5
+Ingrese la altura del Triangulo
+9
+�Desea ingresar otra Figura? (Si / No)
+No
+Datos de Figura
+Cuadrado{lado=5.0, caracteristicas=da, area=25.0}
+Datos de Figura
+Rombo{diag_m=6.0, diag_M=8.0, caracteristicas=ra, area=0.0}
+Datos de Figura
+Triangulo{base=5.0, alto=9.0, caracteristicas=daada, area=22.5}
+BUILD SUCCESSFUL (total time: 1 minute 21 seconds)
+*/
