@@ -5,16 +5,21 @@
  */
 package paquete05;
 
-import paquete04.*;
 
 public class EstudianteDistancia extends Estudiante {
-    /*1.  Declarar
-        numeroAsignaturas: Entero 
-        costoAsginatura: Real 
-    */ 
-    
+
+      
     int numeroAsignaturas;
     double costoAsignatura;
+     
+    public EstudianteDistancia(int numeroAsignaturas, double costoAsignatura, String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante) {
+        super(nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
+        this.numeroAsignaturas = numeroAsignaturas;
+        this.costoAsignatura = costoAsignatura;
+    }
+ 
+        
+
     
     //  Métodos establecer y calcular para los datos o atributos de la clase
     

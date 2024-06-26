@@ -14,10 +14,8 @@ public class EstudiantePresencial extends Estudiante {
     int numeroCreditos;
     double costoCredito;
 
-    public EstudiantePresencial(int numeroCreditos, double costoCredito) {
-        super();
-        this.numeroCreditos = numeroCreditos;
-        this.costoCredito = costoCredito;
+    public EstudiantePresencial() {
+     
     }
     
     

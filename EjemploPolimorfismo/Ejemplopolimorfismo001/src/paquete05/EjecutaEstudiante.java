@@ -2,7 +2,7 @@ package paquete05;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import paquete04.Estudiante;
+import java.util.Locale;
 
 public class EjecutaEstudiante {
 
@@ -16,7 +16,9 @@ public class EjecutaEstudiante {
         quiere ingresar.
         
          */
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in); // MEGA UTIL para cuando el scaner no reconoce los puntso de decimales, sino las comas solamente
+        entrada.useLocale(Locale.US);
+        
         String nombresEst;
         String apellidosEst;
         String identificacionEst;
@@ -31,28 +33,43 @@ public class EjecutaEstudiante {
         ArrayList<Estudiante> estudiantes = new ArrayList<>();
 
         // inicio de solución
-        int opc;
-
         do {
             System.out.println("[1] Estudiante Presencial");
             System.out.println("[2] Estudiante Distancia");
-            opc = entrada.nextInt();
+            tipoEstudiante = entrada.nextInt();
+            
+            entrada.nextLine(); // consume ese consome de linea.
+            
+            System.out.println("Ingrese los nombres del estudiante");
+            nombresEst = entrada.nextLine();
+            System.out.println("Ingrese los apellidos del estudiante");
+            apellidosEst = entrada.nextLine();
+            System.out.println("Ingrese la identificación del estudiante");
+            identificacionEst = entrada.nextLine();
+            System.out.println("Ingrese la edad del estudiante");
+            edadEst = entrada.nextInt();
 
-            switch (opc) {
+            switch (tipoEstudiante) {
                 case 1:
-                    System.out.println("Ingrese los nombres del estudiante");
-                    nombresEst = entrada.nextLine();
-                    System.out.println("Ingrese los apellidos del estudiante");
-                    apellidosEst = entrada.nextLine();
-                    System.out.println("Ingrese la identificación del estudiante");
-                    identificacionEst = entrada.nextLine();
-                    System.out.println("Ingrese la edad del estudiante");
-                    edadEst = entrada.nextInt();
+
                     System.out.println("Ingrese el número de créditos");
                     numeroCreds = entrada.nextInt();
                     System.out.println("Ingrese el costo de cada créditos");
                     costoCred = entrada.nextDouble();
-                    estudiantes.add(new EstudiantePresencial(nombresEst, apellidosEst, identificacionEst, edadEst, numeroCreds,costoCred));
+                    EstudiantePresencial studP = new EstudiantePresencial(numeroCreds, costoCred, nombresEst, apellidosEst, identificacionEst, edadEst);
+                    estudiantes.add(studP);
+                    break;
+
+                case 2:
+
+                    System.out.println("Ingrese el número de asignaturas");
+                    numeroAsigs = entrada.nextInt();
+                    System.out.println("Ingrese el costo de cada cada asignatura");
+                    costoAsig = entrada.nextDouble();
+                    costoCred = entrada.nextDouble();
+                    EstudianteDistancia studD = new EstudianteDistancia(numeroAsigs, costoAsig, nombresEst, apellidosEst, identificacionEst, edadEst);
+                    estudiantes.add(studD);
+                    break;
             }
 
             contador++;

@@ -5,24 +5,16 @@
  */
 package paquete05;
 
-import paquete04.*;
-
 public class EstudiantePresencial extends Estudiante {
 
-    /*1.  Declarar
-    numeroCreditos: Entero
-    costoCredito: Real 
-     */
-    public EstudiantePresencial(int numeroCreditos, double costoCredito) {
-        super();
+    int numeroCreditos;
+    double costoCredito;
+
+    public EstudiantePresencial(int numeroCreditos, double costoCredito, String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante) {
+        super(nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
         this.numeroCreditos = numeroCreditos;
         this.costoCredito = costoCredito;
     }
-    
-
-    
-    int numeroCreditos;
-    double costoCredito;
 
     //  Métodos establecer y calcular para los datos o atributos de la clase
     // 2.  Método establecerNumeroCreditos(numero: Real)
