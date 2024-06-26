@@ -31,11 +31,7 @@ public abstract class Estudiante {
         this.edadEstudiante = edadEstudiante;
     }
 
-    
-    
-    public Estudiante(String nombre, String apellido) {
-        nombresEstudiante = nombre;
-        apellidosEstudiante = apellido;
+    public Estudiante() {
     }
 
     // Método establecerNombresEstudiante(nom: Cadena)

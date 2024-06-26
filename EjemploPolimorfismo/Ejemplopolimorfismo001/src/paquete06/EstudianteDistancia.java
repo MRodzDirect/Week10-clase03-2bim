@@ -19,7 +19,13 @@ public class EstudianteDistancia extends Estudiante {
         this.numeroAsignaturas = numeroAsignaturas;
         this.costoAsignatura = costoAsignatura;
     }
-    
+
+    public EstudianteDistancia() {
+    }
+
+    public EstudianteDistancia(String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante) {
+        super(nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
+    }
     
     
     //  Métodos establecer y calcular para los datos o atributos de la clase

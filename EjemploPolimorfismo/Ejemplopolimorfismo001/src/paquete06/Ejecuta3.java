@@ -1,11 +1,9 @@
 package paquete06;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-import paquete04.Estudiante;
 
-public class EjecutaEstudiante1 {
 
+public class Ejecuta3 {
+// usando sobrecarga de constructores
     public static void main(String[] args) {
         String name = "Marcus";
         String surname = "A.R";

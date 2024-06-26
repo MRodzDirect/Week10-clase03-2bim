@@ -3,7 +3,7 @@ package paquete05;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Locale;
-
+// Trabajo que nos pidio hacer el dia Martes 25 de Junio el profe. 
 public class EjecutaEstudiante {
 
     public static void main(String[] args) {

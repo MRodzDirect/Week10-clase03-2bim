@@ -1,11 +1,8 @@
 package paquete06;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-import paquete04.Estudiante;
+public class Ejecuta2 {
 
-public class EjecutaEstudiante2 {
-
+    // usando metodos establecer y obtener y algunos parametros por constructor
     public static void main(String[] args) {
         String name = "Marcus";
         String surname = "A.R";
@@ -17,10 +14,10 @@ public class EjecutaEstudiante2 {
         double costoAsig = 400.65;
         int numeroAsigs = 10;
 
-        EstudianteDistancia studD = new EstudianteDistancia(numeroAsigs, costoAsig, surname, surname, surname, numeroAsigs);
-        
-        System.out.println(studD.toString() );
-       // EstudianteDistancia studD = new EstudianteDistancia(name, surname, id, age);
+        EstudianteDistancia studD = new EstudianteDistancia(name, surname, id, age);
+        studD.establecerNumeroAsginaturas(numeroAsigs);
+        studD.establecerCostoAsignatura(costoAsig);
+        System.out.println(studD.toString());
 
     }
 }

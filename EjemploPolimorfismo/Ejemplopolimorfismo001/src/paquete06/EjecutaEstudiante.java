@@ -55,7 +55,15 @@ public class EjecutaEstudiante {
                     numeroCreds = entrada.nextInt();
                     System.out.println("Ingrese el costo de cada créditos");
                     costoCred = entrada.nextDouble();
-                    EstudiantePresencial studP = new EstudiantePresencial(numeroCreds, costoCred, nombresEst, apellidosEst, identificacionEst, edadEst);
+                    EstudiantePresencial studP = new EstudiantePresencial();
+
+                    studP.establecerNombresEstudiante(nombresEst);
+                    studP.establecerApellidoEstudiante(apellidosEst);
+                    studP.establecerIdentificacionEstudiante(identificacionEst);
+                    studP.establecerEdadEstudiante(edadEst);
+                    studP.establecerNumeroCreditos(numeroCreds);
+                    studP.establecerCostoCredito(costoCred);
+
                     estudiantes.add(studP);
                     break;
 
@@ -66,7 +74,13 @@ public class EjecutaEstudiante {
                     System.out.println("Ingrese el costo de cada cada asignatura");
                     costoAsig = entrada.nextDouble();
                     costoCred = entrada.nextDouble();
-                    EstudianteDistancia studD = new EstudianteDistancia(numeroAsigs, costoAsig, nombresEst, apellidosEst, identificacionEst, edadEst);
+                    EstudianteDistancia studD = new EstudianteDistancia();
+                    studD.establecerNombresEstudiante(nombresEst);
+                    studD.establecerApellidoEstudiante(apellidosEst);
+                    studD.establecerIdentificacionEstudiante(identificacionEst);
+                    studD.establecerEdadEstudiante(edadEst);
+                    studD.establecerNumeroAsginaturas(numeroAsigs);
+                    studD.establecerCostoAsignatura(costoAsig);
                     estudiantes.add(studD);
                     break;
             }

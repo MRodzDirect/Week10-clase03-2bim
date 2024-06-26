@@ -20,6 +20,13 @@ public class EstudiantePresencial extends Estudiante {
         this.costoCredito = costoCredito;
     }
 
+    public EstudiantePresencial() {
+  
+    }
+
+    public EstudiantePresencial(String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante) {
+        super(nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
+    }
     
     
     //  Métodos establecer y calcular para los datos o atributos de la clase
