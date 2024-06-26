@@ -13,6 +13,14 @@ public class EstudianteDistancia extends Estudiante {
     
     int numeroAsignaturas;
     double costoAsignatura;
+
+    public EstudianteDistancia(int numeroAsignaturas, double costoAsignatura, String nombresEstudiante, String apellidosEstudiante, String identificacionEstudiante, int edadEstudiante) {
+        super(nombresEstudiante, apellidosEstudiante, identificacionEstudiante, edadEstudiante);
+        this.numeroAsignaturas = numeroAsignaturas;
+        this.costoAsignatura = costoAsignatura;
+    }
+    
+    
     
     //  Métodos establecer y calcular para los datos o atributos de la clase
     
@@ -42,5 +50,17 @@ public class EstudianteDistancia extends Estudiante {
     public double obtenerCostoAsignatura(){
         return costoAsignatura;
     }
+    
+        @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("EstudianteDistancia{");
+        sb.append(super.toString());
+        sb.append("numeroAsignaturas=").append(numeroAsignaturas);
+        sb.append(", costoAsignatura=").append(costoAsignatura);
+        sb.append('}');
+        return sb.toString();
+    }
+       
         
 }
